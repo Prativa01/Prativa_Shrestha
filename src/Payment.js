@@ -1,17 +1,17 @@
-import React from'react';
-import './Payment.css';
+// import React from'react';
+// import './Payment.css';
 
-function Payment(){
-    return(
-        <div className='payment'>
-            <div className='payment_container'>
-                {/* Delivery Address */}
+// function Payment(){
+//     return(
+//         <div className='payment'>
+//             <div className='payment_container'>
+//                 {/* Delivery Address */}
 
-                {/* review items */}
+//                 {/* review items */}
 
-                {/*payment method*/}
-            </div>
-        </div>
-    )
-}
-export default Payment;
+//                 {/*payment method*/}
+//             </div>
+//         </div>
+//     )
+// }
+// export default Payment;
