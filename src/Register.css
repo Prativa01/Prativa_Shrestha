@@ -1,4 +1,4 @@
-/* .Register{
+.Register{
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -57,4 +57,4 @@
     background-color: white;
     width:97%
 }
- */
+
