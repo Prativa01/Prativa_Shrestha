@@ -1,4 +1,4 @@
-/* .checkoutProduct{
+.checkoutProduct{
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -25,4 +25,4 @@
 .checkoutProduct_title{
     font-size: 17px;
     font-weight: 800;
-} */
+}
