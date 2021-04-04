@@ -8,8 +8,14 @@ import Checkout from "./Checkout";
 import Login from "./Login";
 import Register from './Register';
 import Payment from './Payment';
-import Dashboard from './Admin/Dashboard';
-import AdminHeader from './Admin/AdminHeader';
+import AdminHeader from './AdminHeader';
+import AdminDashboard from "./AdminDashboard";
+
+import AddProduct from "./AddProduct";
+import UpdateProduct from "./UpdateProduct";
+import About from "./About";
+
+
 
 function App() {
   return (
@@ -35,15 +41,32 @@ function App() {
           <Header/>
             <Payment/>
           </Route>
+          
+          <Route path="/addproduct">
+          <AdminHeader/>
+            <AddProduct/>
+          </Route>
+          <Route path ="/productupdate/:id">
+            <AdminHeader/>
+            <UpdateProduct/>
+            </Route>
+          
+          <Route path ="/about">
+            <Header/>
+            <About/>
+          </Route>
+
+          <Route path="/admin">
+          <AdminHeader/>
+          <AdminDashboard/>
+          </Route>
 
           <Route path="/">
           <Header/>
             <Home/>
           </Route>
-          <Route path="/admin">
-          <AdminHeader/>
-            <Dashboard/>
-          </Route>
+          
+          
       </Switch>
       
     </div>

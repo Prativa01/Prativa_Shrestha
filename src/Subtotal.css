@@ -1,4 +1,4 @@
-/* .subtotal{
+.subtotal{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,4 +28,4 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31;
     color: #111;
-} */
+}

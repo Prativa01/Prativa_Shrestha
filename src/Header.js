@@ -31,10 +31,13 @@ function Header(){
                         <span className='header_optionLineOne'>Returns</span>
                         <span className='header_optionLineTwo'>& Orders</span>
                     </div>
+                    <Link to ="/about">
                     <div className = 'header_option'>
-                        <span className='header_optionLineOne'>Help</span>
+                        <span className='header_optionLineOne'>About Us</span>
                         <span className='header_optionLineTwo'>& Contact Us</span>
                     </div>
+                    </Link>
+
                     <Link to="/checkout">
                         <div className="header_optionCart">
                             <ShoppingCartIcon/>
