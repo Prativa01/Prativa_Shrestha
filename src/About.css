@@ -7,6 +7,7 @@
     height: 600px;
     border-radius: 5px;
     border: black;
+	color: black;
 }
 .us{
     width: 100%;
@@ -20,10 +21,11 @@
     width: 500px;
     height: 400px;
     float: left;
-    margin-top: 50px;
+    
     margin-left: 100px;
-}
-.about .content{
+}	
+/* }
+/* .about .content{
     width: 800px;
     height:500px;
     float:left;
@@ -59,7 +61,7 @@ color: #ffc451;
 .about .content p:last-child {
 margin-bottom: 0;
 margin-top: 10px;
-}
+} */
 
 /*--------------------------------------------------------------
 # Contact
@@ -70,8 +72,8 @@ margin-top: 10px;
 	
 }
 
-/* #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; } */
-
+ #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; } */
+ 
 #contact {
 	background:#F9F9F9;
 	padding:25px;
@@ -156,4 +158,4 @@ fieldset {
 }
 :-ms-input-placeholder {
  color:#888;
-}
+} 

@@ -14,6 +14,9 @@ import AdminDashboard from "./AdminDashboard";
 import AddProduct from "./AddProduct";
 import UpdateProduct from "./UpdateProduct";
 import About from "./About";
+import Details from "./Details";
+import Profile from "./Profile";
+
 
 
 
@@ -25,45 +28,65 @@ function App() {
         <Route path ="/login">
         <Header/>
           <Login/>
+          
         </Route>
 
         <Route path ="/register">
         <Header/>
           <Register/>
+        
         </Route>
 
           <Route path="/checkout">
           <Header/>
             <Checkout/>
+        
           </Route>
 
           <Route path="/payment">
           <Header/>
             <Payment/>
+         
           </Route>
           
           <Route path="/addproduct">
           <AdminHeader/>
             <AddProduct/>
+            
           </Route>
-          <Route path ="/productupdate/:id">
-            <AdminHeader/>
-            <UpdateProduct/>
-            </Route>
+
+          
+          <Route path ="/productupdate/:id" component={UpdateProduct}/>
+           
           
           <Route path ="/about">
             <Header/>
             <About/>
+           
+          </Route>
+
+          <Route path ="/details">
+            <AdminHeader/>
+            <Details/>
+            
+          </Route>
+
+          <Route path ="/profile">
+            <Header/>
+            <Profile/>
+       
           </Route>
 
           <Route path="/admin">
           <AdminHeader/>
           <AdminDashboard/>
+        
           </Route>
 
           <Route path="/">
           <Header/>
             <Home/>
+         
           </Route>
           
           

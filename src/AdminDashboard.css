@@ -35,6 +35,13 @@
 
 }
 
+/* .dashboardCard{
+    width: '18rem';
+     margin:"10px";
+ textAlign:'center';
+ color:"#fff"; 
+ background: "#0f2f45"; justifyContent:"center"; display:"flex"; flex-direction:"column"; */
+/* } */
 /* target the img i product container */
  .dashboard > img{
     max-height: 400px;
@@ -52,13 +59,3 @@
     color: #111;
 }
 
-.dashboard_info{
-    height: 200px;
-    margin-bottom: 15px;
-    margin-left: 10px;
-
-}
-
-.dashboard_price{
-    margin-top: 5px;
-} 

@@ -1,4 +1,3 @@
-
 import React, { Component } from'react';
 import frozen from './frozen.jpg';
 import './About.css';
@@ -36,7 +35,7 @@ class About extends Component{
          </div>   
 
             <div class="container">  
-                <form id="contact" action="" method="post">
+                <form id="contact" action="" method="post" style={{marginRight:"350px"}}>
                     <h3>Quick Contact</h3>
                     <h4>Contact us today, and get reply with in 24 hours!</h4>
                     <fieldset>

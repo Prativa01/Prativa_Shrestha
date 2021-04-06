@@ -11,7 +11,7 @@ class UpdateProduct extends Component {
         ProductAvailable: "",
         ProductRating: "",
         ProductType: "",
-        id : this.props.match.params.id
+        id :this.props.match.params.id
     }
 
     changeHandler = (e) => {
@@ -31,6 +31,7 @@ class UpdateProduct extends Component {
         axios.get("http://localhost:90/product/single/" + this.state.id)
             .then((response) => {
                 this.setState({
+                    // id:response.data._id,
                     ProductName: response.data.ProductName,
                     ProductImage: response.data.ProductImage,
                     ProductPrice: response.data.ProductPrice,
@@ -38,6 +39,7 @@ class UpdateProduct extends Component {
                     ProductAvailable: response.data.ProductAvailable,
                     ProductRating: response.data.ProductRating,
                     ProductType: response.data.ProductType,
+                    
 
                 })
 

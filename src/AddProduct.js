@@ -58,10 +58,13 @@ SendItems=(e)=>{
 
     render(){
         return(
-<div>
-<div className="card" style={{ width: '65rem' , margin :'10px'}}>
-    <form>
-   
+
+<div className="container-fluid mt--7" >
+                <div className="row">
+                    <div className="col-xl-4 order-xl-2 mb-5 mb-xl-0" style={{ marginTop: "200px", marginLeft: "500px" }}>
+                        <div className="card card-profile shadow">
+    <form style={{marginLeft:"20px", marginTop:"10px"}}>
+                <h3 style={{marginLeft:"20px", fontSize:"20px", fontWeight:"800"}}>Add Product</h3>
         <p><u><b>
             Product Name
             <input type ="text" name="ProductName" value={this.state.ProductName} onChange={this.ChangeItems}/>
@@ -95,11 +98,13 @@ SendItems=(e)=>{
             Product Type 
             <input type ="text" name="ProductType" value={this.state.ProductType} onChange={this.ChangeItems}/> 
             </b></u></p>
-        <p><button onClick={this.SendItems}>
+        <p><button onClick={this.SendItems} style={{marginLeft:"100px"}}>
             Add 
             </button></p>
             
     </form>
+</div>
+</div>
 </div>
 </div>
             )

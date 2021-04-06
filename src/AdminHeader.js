@@ -25,10 +25,12 @@ function AdminHeader(){
 
                     </div>
                     
+                    <Link to ="/details">
                     <div className = 'header_option'>
-                        <span className='header_optionLineOne'>Cart</span>
-                        <span className='header_optionLineTwo'>& Orders</span>
+                        <span className='header_optionLineOne'>User</span>
+                        <span className='header_optionLineTwo'>Details</span>
                     </div>
+                    </Link>
                     <div className = 'header_option'>
                         <span className='header_optionLineOne'>Help</span>
                         <span className='header_optionLineTwo'>& Feedback</span>
