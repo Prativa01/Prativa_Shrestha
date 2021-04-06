@@ -9,7 +9,8 @@ class Profile extends Component {
         username: "",
         address: "",
         contact: "",
-        email: ""
+        email: "",
+        
 
     }
 
@@ -79,7 +80,7 @@ class Profile extends Component {
                             <div className="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                                 <div className="d-flex justify-content-between">
 
-                                    <a href="#" className="btn btn-sm btn-default float-right">Edit</a>
+                                    <a className="btn btn-sm btn-default float-right">Edit</a>
                                     
                                 </div>
                             </div>

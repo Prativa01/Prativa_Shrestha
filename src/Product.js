@@ -3,7 +3,7 @@ import "./Product.css";
 import chajang from "./chajangNoodles.jpg"
 import { useStateValue } from './StateProvider';
 
-function Product({id,title,image,price,rating}){
+function Product({id,title,image,price,desc,rating}){
     const [{basket}, dispatch] = useStateValue();
     //dispatch is how we manipulate the data
 
@@ -17,18 +17,20 @@ function Product({id,title,image,price,rating}){
                 title:title,
                 image:image,
                 price:price,
+                desc:desc,
                 rating:rating
             }
         });
     };
     return(
-        <div className="product">
+        <div className="product"  style={{border:"1px solid black"}}>
             <div className="product_info">
                 <p>{title}</p>
                 <p className='product_price'>
                    <small>Price Rs </small>
                     <strong>{price}</strong>
                 </p>
+                <p>{desc}</p>
                 <div className="product_rating">
                     {Array(rating).fill().map((_ , i) => (
                         <p>⭐</p>

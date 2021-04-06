@@ -49,11 +49,11 @@ class AdminDashboard extends Component{
                             return(
                                 
                                 <div className="col-md-3">
-                                    <Card className="dashboardCard shadow-lg" style={{width: '20rem',
-                                    textAlign:'center', color:"#fff", background: "#0f2f45", justifyContent:"center", display:"flex", flexDirection:"column", marginLeft:"50px"}}>
-                                    <Card.Body>
+                                    <Card className="dashboardCard shadow-lg" style={{width: '20.5rem', height:"650px",
+                                    textAlign:'center', color:"black",  justifyContent:"center", display:"flex", flexDirection:"column", marginLeft:"40px", marginTop:"30px", border:"1px solid black"}}>
+                                    <Card.Body >
                                     <img className="home_image" src={"http://localhost:90/"+ item.ProductImage}/>
-                                        <Card.Text >Product Name :{item.ProductName}</Card.Text>
+                                        <Card.Text style={{marginTop:"70px"}}>Product Name :{item.ProductName}</Card.Text>
                                         <Card.Text>Product Price :{item.ProductPrice}</Card.Text>
                                         <Card.Text>Product Description: {item.ProductDesc}</Card.Text>
                                         <Card.Text>Product Available: {item.ProductAvailable}</Card.Text>
@@ -65,25 +65,7 @@ class AdminDashboard extends Component{
 
 
                             
-                            // <div className="">
-                            //     <div className="dashboard col-md-3">
-                            //         <div className="dashboard_info">
-                                            
-                            //                     <p ><img className="home_image" src={"http://localhost:90/"+ item.ProductImage}/></p>
-                            //                     <p>Product Name :{item.ProductName}</p>
-                            //                     <p className='dashboard_price'>
-                            //                     <p>Product Price :{item.ProductPrice}</p>
-                            //                     </p>
-                            //                     <p>Product Description :{item.ProductDesc}</p>
-                            //                     <p>Product Available :{item.ProductAvailable}</p>
-                                    
-                            //             {/* <button>Update</button>
-                            //             <button>Delete</button> */}
-                            //             <p><button onClick={this.DeleteProduct.bind(this,item._id)}>Delete</button></p>
-                            //             <p><Link to ={"/productupdate/"+ item._id}>Update</Link></p>
-                            //         </div>
-                            //     </div>
-                            // </div>
+                       
                 
                     
                     )
