@@ -1,8 +1,8 @@
 .header{
-    height: 60px;
+    height: 70px;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: silver;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -12,13 +12,14 @@
     width: 100px;
     object-fit: contain;
     margin: 0 20px;
+    height: 100px;
     
 }
 .header_search{
     display: flex;
     flex: 1;
-    align-items: center;
-    border-radius: 24px;
+    align-items: left;
+    border-radius: 30px;
 }
 .header_searchInput{
     height: 12px;
@@ -28,19 +29,20 @@
 }
 .header_searchIcon{
     padding: 5px;
-    height: 22px !important;
+    height: 25px !important;
     background-color: #D1D0CE;
 }
 .header_nav{
     display: flex;
     justify-content: space-evenly;
+    
 }
 .header_option{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
-    color: blanchedalmond;
+    color: black;
 }
 .header_optionLineOne{
     font-size: 10px;
@@ -52,7 +54,7 @@
 .header_optionCart{
     display: flex;
     align-items: center;
-    color: blanchedalmond;
+    color: brown;
 }
 .header_cartCount{
     margin-top: 10px;

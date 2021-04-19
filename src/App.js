@@ -16,6 +16,8 @@ import UpdateProduct from "./UpdateProduct";
 import About from "./About";
 import Details from "./Details";
 import Profile from "./Profile";
+import Order from "./Order";
+import EditProfile from "./EditProfile";
 
 
 
@@ -57,30 +59,31 @@ function App() {
 
           
           <Route path ="/productupdate/:id" component={UpdateProduct}/>
-           
+
+          
           
           <Route path ="/about">
             <Header/>
             <About/>
-           
           </Route>
 
           <Route path ="/details">
             <AdminHeader/>
             <Details/>
-            
           </Route>
 
           <Route path ="/profile">
             <Header/>
             <Profile/>
-       
+          </Route>
+          <Route path ="/order">
+            <Header/>
+            <Order/>
           </Route>
 
           <Route path="/admin">
           <AdminHeader/>
           <AdminDashboard/>
-        
           </Route>
 
           <Route path="/">

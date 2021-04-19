@@ -1,7 +1,7 @@
 // import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import './Login.css';
-import logo from "./logo1.png";
+import eleshop from "./eleshop.jpg";
 import axios from 'axios';
 import {Component, state, changeHandler, submitLogin } from "react";
 
@@ -45,7 +45,7 @@ class Login extends Component{
         return(
         <div className="login">
             <Link to ='/'>
-            <img className="login_logo" src={logo} alt=""/>
+            <img className="login_logo" src={eleshop} alt=""/>
             </Link>
             <div className ='login_container'>
                 <h1>Login</h1>

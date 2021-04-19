@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
-import logo from './logo.png';
+import eleshop from './eleshop.jpg';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Link } from 'react-router-dom';
@@ -24,6 +24,7 @@ function Header(){
             
             var menu = 
                 <div className="header_nav">
+                    
                     <Link to ="/profile">
                     <div className = 'header_option'>
                         <span className='header_optionLineOne'>Hello {localStorage.getItem('username')}</span>
@@ -31,14 +32,24 @@ function Header(){
 
                     </div>
                     </Link>
+                    <Link to="/Home">
                     <div className = 'header_option'>
-                        <span className='header_optionLineOne'>Returns</span>
-                        <span className='header_optionLineTwo'>& Orders</span>
+                        
+                        <span className='header_optionLineTwo'>Home</span>
                     </div>
+                    </Link>
+                    
+                   
                     <Link to ="/about">
                     <div className = 'header_option'>
-                        <span className='header_optionLineOne'>About Us</span>
-                        <span className='header_optionLineTwo'>& Contact Us</span>
+                        
+                        <span className='header_optionLineTwo'> About Us</span>
+                    </div>
+                    </Link>
+                    <Link to="/order">
+                    <div className = 'header_option'>
+                        
+                        <span className='header_optionLineTwo'>Contact Us</span>
                     </div>
                     </Link>
 
@@ -53,6 +64,8 @@ function Header(){
                         <span className='header_optionLineTwo'  onClick={logout}>Logout </span>
                     </div>
                     </Link>
+
+                   
                 </div>
             
                     
@@ -63,7 +76,7 @@ function Header(){
                     <div className="header_nav">
                         <Link to ="/login">
                     <div className = 'header_option'>
-                            <span className='header_optionLineOne'>Hello Customer</span>
+                            <span className='header_optionLineOne'>Hello</span>
                             <span className='header_optionLineTwo'>Sign In</span>
 
                         </div>
@@ -82,7 +95,7 @@ function Header(){
     return(
         <div className='header'>
         <Link to ="/">
-        <img className="header_logo" src={logo} alt="Logo"/>
+        <img className="header_logo" src={eleshop} alt="Logo"/>
         </Link>
             <div className ="header_search">
                     <input className="header_searchInput" type="text"/>
@@ -92,44 +105,6 @@ function Header(){
                     </div>
        
        
-        // <div className='header'>
-        //     <Link to ="/">
-        //     <img className="header_logo" src={logo} alt="Logo"/>
-        //     </Link>
-                
-        //         <div className ="header_search">
-        //             <input className="header_searchInput" type="text"/>
-        //             <SearchIcon className="header_searchIcon"/>
-        //         </div>
-        //         <div className="header_nav">
-        //             <Link to ="/login">
-        //             <div className = 'header_option'>
-        //                 <span className='header_optionLineOne'>Hello Customer</span>
-        //                 <span className='header_optionLineTwo'>Sign In</span>
-
-        //             </div>
-        //             </Link>
-        //             <div className = 'header_option'>
-        //                 <span className='header_optionLineOne'>Returns</span>
-        //                 <span className='header_optionLineTwo'>& Orders</span>
-        //             </div>
-        //             <Link to ="/about">
-        //             <div className = 'header_option'>
-        //                 <span className='header_optionLineOne'>About Us</span>
-        //                 <span className='header_optionLineTwo'>& Contact Us</span>
-        //             </div>
-        //             </Link>
-
-        //             <Link to="/checkout">
-        //                 <div className="header_optionCart">
-        //                     <ShoppingCartIcon/>
-        //                     <span className="header_optionalLineTwo header_cartCount">{basket?.length}</span>
-        //                 </div>
-        //             </Link>
-                    
-
-        //         </div>
-        // </div>
     )
 }
 

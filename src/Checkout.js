@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Checkout.css';
-import ad from './ad.png';
+import ecom from './ecom.jpg';
 import Subtotal from './Subtotal';
 import { StateContext, useStateValue } from './StateProvider';
 import CheckoutProduct from './CheckoutProduct';
@@ -12,7 +12,8 @@ function Checkout(){
     return(
         <div className="checkout">
           <div className="checkout_left">
-              <img className="checkout_ad" src={ad} alt=""/>
+              <img className="checkout_ad" src={ecom} alt=""/>
+              
 
               <div>
                   

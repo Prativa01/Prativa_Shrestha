@@ -1,7 +1,7 @@
 import React, { Component } from'react';
 import axios from 'axios'
 import './AdminDashboard.css';
-import frozen from './frozen.jpg';
+import back from './back.jpg';
 import {Link, link} from 'react-router-dom';
 import Card from "react-bootstrap/Card";
 
@@ -38,7 +38,7 @@ class AdminDashboard extends Component{
         return(
            
                 <div className="container-fluid">
-                     <img className="dashboard_image" src={frozen} alt=""/>
+                     <img className="dashboard_image" src={back} alt=""/>
                     <div className="row">
                                 {
                                     

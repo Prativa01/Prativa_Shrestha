@@ -1,6 +1,7 @@
 import { Component } from "react";
 import './Profile.css';
 import axios from 'axios';
+import { Link } from "@material-ui/core";
 
 class Profile extends Component {
 
@@ -10,7 +11,7 @@ class Profile extends Component {
         address: "",
         contact: "",
         email: "",
-        
+        id:""
 
     }
 
@@ -20,6 +21,7 @@ class Profile extends Component {
         axios.get('http://localhost:90/consumer/single/'+username)
         .then((response)=>{
                 this.setState({
+                    id:response.data.ConsumerData._id,
                     fullname: response.data.ConsumerData.fullname,
                     username: response.data.ConsumerData.username,
                     address: response.data.ConsumerData.address,
@@ -47,7 +49,7 @@ class Profile extends Component {
     sendUserData = (e) => {
         e.preventDefault()
         const data = {
-
+            id :this.state._id,
             fullname: this.state.fullname,
             username: this.state.username,
             address: this.state.address,
@@ -68,19 +70,13 @@ class Profile extends Component {
                 <div className="row">
                     <div className="col-xl-4 order-xl-2 mb-5 mb-xl-0" style={{ marginTop: "200px", marginLeft: "500px" }}>
                         <div className="card card-profile shadow">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-3 order-lg-2">
-                                    <div className="card-profile-image">
-                                        <a href="#">
-                                            <img src="https://demos.creative-tim.com/argon-dashboard/assets/img/theme/team-4.jpg" className="rounded-circle" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div className="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                                 <div className="d-flex justify-content-between">
-
-                                    <a className="btn btn-sm btn-default float-right">Edit</a>
+                                    <h3 style={{fontSize:"40px", marginLeft:"30px"}}>My Details</h3>
+                                    {/* <Link to ="/editprofile/">
+                                        <button>Edit</button>
+                                        </Link> */}
                                     
                                 </div>
                             </div>
@@ -88,7 +84,7 @@ class Profile extends Component {
 
                                 <div className="text-center">
                                                         
-                                <input type ="file" name="ProductImage"  onChange={this.fileHandler}/>
+                                
                                         
                                     <h3>
                                         Fullname: {this.state.fullname}
